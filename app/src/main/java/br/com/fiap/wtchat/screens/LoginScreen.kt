@@ -1,5 +1,6 @@
 package br.com.fiap.wtchat.screens
 
+import android.view.View.X
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -84,28 +86,28 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     painter = painterResource(id = R.drawable.logo),
                     contentDescription = "WTC Logo",
                     modifier = Modifier
-                        .size(300.dp)
+                        .size(330.dp)
                         .offset(y = (-80).dp)
                 )
                 Text(
                     text = ("WORLD TRADE CENTER®"),
                     fontSize = 25.sp,
                     fontWeight = FontWeight.SemiBold,
-                    modifier = Modifier.offset(y = (-120).dp)
+                    modifier = Modifier.offset(y = (-160).dp)
                 )
                 Text(
                     text = ("SÃO PAULO"),
                     color = colorResource(id = R.color.laranja_wtc),
                     fontWeight = FontWeight.Bold,
                     fontSize = 22.sp,
-                    modifier = Modifier.offset(y = (-118).dp)
+                    modifier = Modifier.offset(y = (-150).dp)
                 )
                 Text(
                     text = ("Usuário"),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 32.dp)
-                        .offset(y = (-75).dp),
+                        .offset(y = (-85).dp),
                     fontSize = 16.sp
                 )
                 OutlinedTextField(
@@ -114,7 +116,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     label = {
                         Text(
                             "Digite o número funcional",
-                            fontSize = 12.sp)
+                            fontSize = 15.sp)
                             },
                     placeholder = {
                         Text(
@@ -123,11 +125,13 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                         )
                                   },
                     singleLine = true,
-                    shape = RoundedCornerShape(size = 60.dp),
+                    shape = RoundedCornerShape(size = 30.dp),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 32.dp)
+                        .heightIn(min = 4.dp)
                         .offset(y = (-80).dp),
+
                     colors = OutlinedTextFieldDefaults.colors(
                         focusedBorderColor = colorResource(id = R.color.azul_wtc),
                         unfocusedBorderColor = colorResource(id = R.color.azul_wtc),
@@ -135,13 +139,13 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     ),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
                 )
-                Spacer(modifier.height(20.dp))
+                Spacer(modifier.height(35.dp))
                 Text(
                     text = ("Senha"),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 32.dp)
-                        .offset(y = (-75).dp),
+                        .offset(y = (-85).dp),
                     fontSize = 16.sp
                 )
 
@@ -151,7 +155,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                     label = {
                         Text(
                             "Digite sua senha",
-                            fontSize = 12.sp)
+                            fontSize = 15.sp)
                     },
                     placeholder = {
                         Text(
@@ -160,7 +164,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                         )
                     },
                     singleLine = true,
-                    shape = RoundedCornerShape(size = 60.dp),
+                    shape = RoundedCornerShape(size = 30.dp),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 32.dp)
@@ -201,11 +205,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
         }
     }
 
-@Preview
-@Composable
-private fun LoginScreenPreview() {
-    LoginScreen()
-}
+
 
 
 @Composable

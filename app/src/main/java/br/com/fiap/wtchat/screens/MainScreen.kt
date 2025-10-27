@@ -1,4 +1,5 @@
 package br.com.fiap.wtchat.screens
+import br.com.fiap.wtchat.functions.BottomNavBar
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -13,10 +14,18 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AddCircle
+import androidx.compose.material.icons.filled.Chat
+import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
@@ -173,13 +182,15 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 ocupacao = "Tech Lead"
             )
         }
+
     }
-    
 }
 
 
-@Preview
-@Composable
-private fun MainScreenPreview() {
-    MainScreen()
-}
+
+
+
+
+
+
+
