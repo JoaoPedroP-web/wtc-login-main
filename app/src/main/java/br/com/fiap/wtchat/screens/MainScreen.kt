@@ -38,7 +38,6 @@ import androidx.compose.ui.unit.sp
 import br.com.fiap.wtchat.functions.CardDeReuniao
 import br.com.fiap.wtchat.functions.ChatNotificationCard
 import br.com.fiap.wtchat.functions.ItemDeTarefa
-import br.com.fiap.wtchat.functions.Navbar
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {

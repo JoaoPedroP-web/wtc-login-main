@@ -15,4 +15,6 @@
     <color name="tarefa2_wtc">#D7DA83</color>
     <color name="tarefa3_wtc">#83ADDA</color>
     <color name="verde_botao">#A9FF5D</color>
+    <color name="branco_padrao">#FFFFFF</color>
+    <color name="cinza_select">#F4F4F4</color>
 </resources>
